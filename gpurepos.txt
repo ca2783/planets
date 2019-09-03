@@ -1,0 +1,89 @@
+[ca2783@node303 ~]$ sudo yum-config-manager --disable lammps-centos-rhel.repo
+Loaded plugins: fastestmirror, priorities, product-id
+[ca2783@node303 ~]$ sudo yum repolist all
+Loaded plugins: fastestmirror, priorities, product-id, search-disabled-repos, subscription-manager
+http://git.icms.temple.edu/rpm/centos/7Server/x86_64/repodata/repomd.xml: [Errno 12] Timeout on http://git.icms.temple.edu/rpm/centos/7Server/x86_64/repodata/repomd.xml: (28, 'Connection timed out after 30001 milliseconds')
+Trying other mirror.
+^Chttp://git.icms.temple.edu/rpm/centos/7Server/x86_64/repodata/repomd.xml: [Errno 14] curl#56 - "Callback aborted"
+Trying other mirror.
+rhel-7-server-extras-rpms                                                                         | 2.0 kB  00:00:00
+rhel-7-server-optional-rpms                                                                       | 2.0 kB  00:00:00
+rhel-7-server-rpms                                                                                | 2.0 kB  00:00:00
+Loading mirror speeds from cached hostfile
+ * cm-rhel7-7.3: updates-us-east.brightcomputing.com
+ * cm-rhel7-7.3-updates: updates-us-east.brightcomputing.com
+ * epel: fedora-epel.mirrors.tds.net
+ * osg: mirror.hep.wisc.edu
+595 packages excluded due to repository priority protections
+repo id                                     repo name                                               status
+Ceph/x86_64                                 Ceph packages for x86_64                                disabled
+Ceph-noarch                                 Ceph noarch packages                                    disabled
+!Pegasus/7Server/x86_64                     Pegasus                                                 disabled
+!atrpms                                     Fedora Core 7Server - x86_64 - ATrpms                   disabled
+ceph-source                                 Ceph source packages                                    disabled
+cm-rhel7-7.3                                Cluster Manager 7.3 for Red Hat Enterprise Linux 7      enabled:        815+7
+cm-rhel7-7.3-updates                        Cluster Manager 7.3 for Red Hat Enterprise Linux 7 - Up enabled:        722+5
+epel/x86_64                                 Extra Packages for Enterprise Linux 7 - x86_64          enabled:   13,112+266
+!epel-debuginfo/x86_64                      Extra Packages for Enterprise Linux 7 - x86_64 - Debug  disabled
+epel-source/x86_64                          Extra Packages for Enterprise Linux 7 - x86_64 - Source disabled
+epel-testing/x86_64                         Extra Packages for Enterprise Linux 7 - Testing - x86_6 disabled
+epel-testing-debuginfo/x86_64               Extra Packages for Enterprise Linux 7 - Testing - x86_6 disabled
+epel-testing-source/x86_64                  Extra Packages for Enterprise Linux 7 - Testing - x86_6 disabled
+goc/x86_64                                  OSG Software for Enterprise Linux 7 - GOC Production -  disabled
+goc-debuginfo/x86_64                        OSG Software for Enterprise Linux 7 - GOC Production -  disabled
+goc-itb/x86_64                              OSG Software for Enterprise Linux 7 - GOC ITB - x86_64  disabled
+goc-itb-debuginfo/x86_64                    OSG Software for Enterprise Linux 7 - GOC ITB - x86_64  disabled
+goc-itb-source                              OSG Software for Enterprise Linux 7 - GOC ITB - x86_64  disabled
+goc-source                                  OSG Software for Enterprise Linux 7 - GOC Production -  disabled
+graphviz-snapshot/7Server/x86_64            Graphviz - RHEL 7Server - x86_64                        disabled
+graphviz-snapshot-debuginfo/7Server/x86_64  Graphviz - RHEL - Debug                                 disabled
+graphviz-snapshot-source                    Graphviz - RHEL 7Server - Source                        disabled
+!graphviz-stable/7Server/x86_64             Graphviz - RHEL 7Server - x86_64                        disabled
+graphviz-stable-debuginfo/7Server/x86_64    Graphviz - RHEL - Debug                                 disabled
+graphviz-stable-source                      Graphviz - RHEL 7Server - Source                        disabled
+habanero                                    Habanero internal repo see https://wiki.cc.columbia.edu enabled:            5
+!htcondor                                   HTCondor                                                disabled
+!lammps-icms/7Server/x86_64                 CentOS/RHEL-7Server - x86_64 - LAMMPS-ICMS snapshot bui enabled:          101
+lammps-icms-debuginfo/7Server/x86_64        CentOS/RHEL-7Server - x86_64 - LAMMPS-ICMS snapshot bui disabled
+lscsoft-backports/7Server/x86_64            lscsoft-backports                                       enabled:         38+1
+lscsoft-production/7Server/x86_64           lscsoft-production                                      enabled:          274
+osg/x86_64                                  OSG Software for Enterprise Linux 7 - x86_64            enabled:        2,890
+osg-contrib/x86_64                          OSG Software for Enterprise Linux 7 - Contributed - x86 disabled
+osg-contrib-debuginfo/x86_64                OSG Software for Enterprise Linux 7 - Contributed - x86 disabled
+osg-contrib-source                          OSG Software for Enterprise Linux 7 - Contributed - x86 disabled
+osg-debuginfo/x86_64                        OSG Software for Enterprise Linux 7 - x86_64 - Debug    disabled
+osg-development/x86_64                      OSG Software for Enterprise Linux 7 - Development - x86 disabled
+osg-development-debuginfo/x86_64            OSG Software for Enterprise Linux 7 - Development - x86 disabled
+osg-development-source                      OSG Software for Enterprise Linux 7 - Development - x86 disabled
+osg-empty/x86_64                            OSG Software for Enterprise Linux 7 - Empty Packages -  disabled
+osg-minefield/x86_64                        OSG Software for Enterprise Linux 7 - Build Repository  disabled
+osg-prerelease/x86_64                       OSG Software for Enterprise Linux 7 - Prerelease Reposi disabled
+osg-source                                  OSG Software for Enterprise Linux 7 - x86_64 - Source   disabled
+osg-testing/x86_64                          OSG Software for Enterprise Linux 7 - Testing - x86_64  disabled
+osg-testing-debuginfo/x86_64                OSG Software for Enterprise Linux 7 - Testing - x86_64  disabled
+osg-testing-source                          OSG Software for Enterprise Linux 7 - Testing - x86_64  disabled
+osg-upcoming/x86_64                         OSG Software for Enterprise Linux 7 - Upcoming - x86_64 disabled
+osg-upcoming-debuginfo/x86_64               OSG Software for Enterprise Linux 7 - Upcoming - x86_64 disabled
+osg-upcoming-development/x86_64             OSG Software for Enterprise Linux 7 - Upcoming Developm disabled
+osg-upcoming-development-debuginfo/x86_64   OSG Software for Enterprise Linux 7 - Upcoming Developm disabled
+osg-upcoming-development-source             OSG Software for Enterprise Linux 7 - Upcoming Developm disabled
+osg-upcoming-minefield/x86_64               OSG Software for Enterprise Linux 7 - Upcoming Build Re disabled
+osg-upcoming-prerelease/x86_64              OSG Software for Enterprise Linux 7 - Upcoming Prerelea disabled
+osg-upcoming-source                         OSG Software for Enterprise Linux 7 - Upcoming - x86_64 disabled
+osg-upcoming-testing/x86_64                 OSG Software for Enterprise Linux 7 - Upcoming Testing  disabled
+osg-upcoming-testing-debuginfo/x86_64       OSG Software for Enterprise Linux 7 - Upcoming Testing  disabled
+osg-upcoming-testing-source                 OSG Software for Enterprise Linux 7 - Upcoming Testing  disabled
+packages-microsoft-com-prod                 packages-microsoft-com-prod                             enabled:          380
+puppetlabs-deps/x86_64                      Puppet Labs Dependencies El 7 - x86_64                  enabled:           17
+puppetlabs-deps-source                      Puppet Labs Source Dependencies El 7 - x86_64 - Source  disabled
+puppetlabs-devel/x86_64                     Puppet Labs Devel El 7 - x86_64                         disabled
+puppetlabs-devel-source                     Puppet Labs Devel El 7 - x86_64 - Source                disabled
+puppetlabs-products/x86_64                  Puppet Labs Products El 7 - x86_64                      enabled:          225
+puppetlabs-products-source                  Puppet Labs Products El 7 - x86_64 - Source             disabled
+!rhel-7-server-debug-rpms/7Server/x86_64    Red Hat Enterprise Linux 7 Server (Debug RPMs)          disabled
+!rhel-7-server-extras-rpms/x86_64           Red Hat Enterprise Linux 7 Server - Extras (RPMs)       enabled:     1,166+14
+!rhel-7-server-optional-rpms/7Server/x86_64 Red Hat Enterprise Linux 7 Server - Optional (RPMs)     enabled:   18,969+161
+!rhel-7-server-rpms/7Server/x86_64          Red Hat Enterprise Linux 7 Server (RPMs)                enabled: 51,774+1,032
+rhel-server-rhscl-7-rpms/7Server/x86_64     Red Hat Software Collections RPMs for Red Hat Enterpris disabled
+repolist: 90,488
+[ca2783@node303 ~]$ sudo yum-config-manager --disable lammps-centos-rhel.repo
